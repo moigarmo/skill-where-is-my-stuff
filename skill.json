@@ -1,0 +1,39 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Make Alexa remember where you put your stuff.",
+          "examplePhrases": [
+            "Alexa open my stuff",
+            "Alexa my stuff"
+          ],
+          "name": "My Stuff",
+          "description": "Tell Alexa where you put something so the next time you can't find it Alexa can remember it for you. "
+        },
+        "es-ES": {
+          "summary": "Haz que Alexa recuerde donde pones tus cosas.",
+          "examplePhrases": [
+            "Alexa, abre mis cosas",
+            "Alexa, mis cosas"
+          ],
+          "name": "Mis Cosas",
+          "description": "Dile a Alexa donde has puesto algo para que la próxima vez que no lo encuentres Alexa te lo recuerde."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-skill-where-is-my-stuff-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

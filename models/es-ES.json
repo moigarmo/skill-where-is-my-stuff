@@ -1,0 +1,141 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mis cosas",
+            "types": [
+                {
+                    "name": "HOUSE_STUFF",
+                    "values": [
+                        {
+                            "id": "THE_CAR_KEYS",
+                            "name": {
+                                "value": "las llaves del coche"
+                            }
+                        },
+                        {
+                            "id": "THE_BLACK_SHIRT",
+                            "name": {
+                                "value": "la camiseta negra"
+                            }
+                        },
+                        {
+                            "id": "THE_PRINTER_CABLE",
+                            "name": {
+                                "value": "el cable de la impresora"
+                            }
+                        },
+                        {
+                            "id": "THE_WALLET",
+                            "name": {
+                                "value": "la cartera"
+                            }
+                        },
+                        {
+                            "id": "WALLET",
+                            "name": {
+                                "value": "cartera"
+                            }
+                        },
+                        {
+                            "id": "THE_PHONE",
+                            "name": {
+                                "value": "el teléfono"
+                            }
+                        },
+                        {
+                            "id": "THE_EARPHONES",
+                            "name": {
+                                "value": "los auriculares"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SaveStuffIntent",
+                    "samples": [
+                        "he guardado {what} en {where}",
+                        "he puesto {what} en {where}",
+                        "guarda {what} en {where}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "what",
+                            "type": "HOUSE_STUFF"
+                        },
+                        {
+                            "name": "where",
+                            "type": "AMAZON.Room"
+                        }
+                    ]
+                },
+                {
+                    "name": "FindStuffIntent",
+                    "samples": [
+                        "donde esta {what}",
+                        "donde estan {what}",
+                        "no encuentro {what}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "what",
+                            "type": "HOUSE_STUFF"
+                        }
+                    ]
+                },
+                {
+                    "name": "ListStuffIntent",
+                    "samples": [
+                        "Dime la lista de cosas que recuerdas",
+                        "Qué cosas recuerdas",
+                        "Dime las cosas que recuerdas"
+                    ]
+                },
+                {
+                    "name": "RemoveStuffIntent",
+                    "samples": [
+                        "borra {what}",
+                        "elimina {what}"
+                    ],
+                    "slots": [
+                        {
+                            "name": "what",
+                            "type": "HOUSE_STUFF"
+                        }
+                    ]
+                },
+                {
+                    "name": "UndoIntent",
+                    "samples": [
+                        "Deshacer operación",
+                        "Deshacer la última operación",
+                        "Deshaz la última operación",
+                        "Control Z",
+                        "Deshaz la operación"
+                    ]
+                }
+            ]
+        }
+    }
+}
